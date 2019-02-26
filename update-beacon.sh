@@ -1,4 +1,3 @@
-sudo -i
 systemctl stop beacon-mn1
 rm -f /usr/local/bin/beacon*
 tmp=$(mktemp -d)
@@ -10,4 +9,3 @@ mv beacon* /usr/local/bin
 cd 
 rm -rf ${tmp}
 systemctl start beacon-mn1
-exit
