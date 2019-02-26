@@ -8,8 +8,8 @@
 
 TMP_FOLDER=$(mktemp -d)
 
-DAEMON_ARCHIVE=${1:-"https://github.com/beaconcrypto/beacon/releases/download/v1.1.2.0-release/ubuntu-16.04.zip"}
-ARCHIVE_STRIP=""
+DAEMON_ARCHIVE=${1:-"https://github.com/beaconcrypto/beacon/releases/download/v1.1.3.0/ubuntu16-4-daemon.zip"}
+ARCHIVE_STRIP=" --strip=1"
 DEFAULT_PORT=11115
 
 NODE_IP=$(curl icanhazip.com -s)
